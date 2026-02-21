@@ -3,9 +3,6 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  base: '/mvp2/', // ←ここを修正！
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
+  base: '/manabee/', // Changed from '/mvp2/' to '/manabee/' to prevent 404 on GitHub Pages
+  plugins: [react()]
 });
